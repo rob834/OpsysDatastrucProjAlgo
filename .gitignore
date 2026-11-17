@@ -1,24 +1,24 @@
-# Compiled class file
-*.class
+import java.util.*;
 
-# Log file
-*.log
+public Class CityRouteOS {
+  public static void main((String[] args) {
+    Scanner sc = new Scanner(System.in);
 
-# BlueJ files
-*.ctxt
+      while (true) {
+            System.out.println("\n=======================================================");
+            System.out.println("   CITYROUTE: FLIGHT NETWORK OS SIMULATOR (CORE)       ");
+            System.out.println("=======================================================");
+            System.out.println("1. CPU Scheduling (Route Request Scheduler)");
+            System.out.println("2. Banker's Algorithm (Runway Deadlock Avoidance)");
+            System.out.println("3. Paging (Map Sector Address Translation)");
+            System.out.println("4. Page Replacement (Route Cache Manager)");
+            System.out.println("5. Segmentation (Flight Data Segment Validator)");
+            System.out.println("6. Fragmentation (Memory Block Allocator)");
+            System.out.println("7. Disk Scheduling (Radar Track Head Scheduler)");
+            System.out.println("8. Multiprogramming (Concurrent Flight Monitor)");
+            System.out.println("0. Exit");
+            System.out.print("Select an OS Module to simulate: ");
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+            int choice = sc.nextint();
+            switch (choice) {
+                case 1 -> CpuSh
